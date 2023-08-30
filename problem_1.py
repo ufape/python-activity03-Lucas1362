@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# YOUR FULL NAME
+# Jamerson Lucas Tenorio Valentim
 # UAG00098
 # Problem Set 3 - Problem 1
 # Description:
@@ -29,7 +29,12 @@ A soma dos números ímpares entre 15 e 12 é: 13
 
 
 def main():
-    pass  # your code here
+    while True:
+        n = int(input("Digite um valor para X (ou 0 para sair): "))
+        if n == 0:
+            break
+        sequencia = ' '.join(str(i) for i in range(1, n + 1))
+        print(f"A sequência até {n} é {sequencia}")
 
 
 if __name__ == '__main__':

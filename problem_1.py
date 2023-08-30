@@ -29,12 +29,20 @@ A soma dos números ímpares entre 15 e 12 é: 13
 
 
 def main():
-    while True:
-        n = int(input("Digite um valor para X (ou 0 para sair): "))
-        if n == 0:
-            break
-        sequencia = ' '.join(str(i) for i in range(1, n + 1))
-        print(f"A sequência até {n} é {sequencia}")
+
+  
+  x = int(input("Digite um valor inteiro para X: "))
+  y = int(input("Digite um valor inteiro para Y: "))
+
+  if x > y:
+    x,y = y,x
+
+  s = 0
+  for i in range(x+1, y):
+    if i % 2 == 1:
+      s += i
+
+  print(f"A soma dos números ímpares entre {x} e {y} é: {s}")
 
 
 if __name__ == '__main__':

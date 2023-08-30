@@ -66,7 +66,8 @@ Percentual de salmão: 25.00%
 
 
 def main():
-n = int(input("Quantas amostras: "))
+    
+    n = int(input("Quantas amostras: "))
     total = 0
     cenoura = 0
     rabanete = 0
@@ -96,6 +97,5 @@ n = int(input("Quantas amostras: "))
     print("Percentual de cenouras: {:.2f}%".format(porcento_cenoura))
     print("Percentual de rabanetes: {:.2f}%".format(porcento_rabanete))
     print("Percentual de salmões: {:.2f}%".format(porcento_salmão))
-
 if __name__ == '__main__':
     main()

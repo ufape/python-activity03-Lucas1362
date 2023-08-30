@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# YOUR FULL NAME
+# Jamerson Lucas Tenorio Valentim
 # UAG00098
 # Problem Set 3 - Problem 2
 # Description:
@@ -27,8 +27,9 @@ Imprima a tabuada de N, conforme o exemplo fornecido.
 
 
 def main():
-    pass  # your code here
-
+  num = int(input("Digite um número inteiro entre 2 e 1000: "))
+  for i in range(1, 11):
+    print(f"{num} x {i} = {i*num}")
 
 if __name__ == '__main__':
     main()
